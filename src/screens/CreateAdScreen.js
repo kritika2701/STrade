@@ -59,6 +59,7 @@ const CreateAdScreen = () => {
 
    //lauch image gallery for uploading photo
    //gives error for now
+   
    const openCamera = ()=>{
     launchImageLibrary({quality:0.5},(fileobj)=>{   //launchCamera   //react-native-image-picker
           const source = {uri : fileobj.uri}
@@ -81,6 +82,8 @@ const CreateAdScreen = () => {
         );
        })
    }
+   
+
     return (
         <View style={styles.container}>
             <Text style={styles.text}>Create Ad!</Text>
